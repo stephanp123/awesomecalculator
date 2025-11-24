@@ -30,10 +30,12 @@ jobs:
         with:
           name: awesome-calculator
           path: src/dist
+          run-id: ${{ github.event.workflow_run.id }}
+          github-token: ${{ github.token }}
 
       - name: List downloaded files (debug)
         run: ls -R
 
       - name: Install wheel
         run: |
-          pip install dist/*.whl
+          pip install src/dist/*.whl
