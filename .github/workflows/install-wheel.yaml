@@ -28,8 +28,8 @@ jobs:
       - name: Download wheel artifact
         uses: actions/download-artifact@v4
         with:
-          name: awesome-calculator
-          path: dist
+          name: awesome-calculator-wheel
+          path: src/dist
 
       - name: List downloaded files (debug)
         run: ls -R
