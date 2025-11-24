@@ -52,6 +52,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: awesome-calculator
-        path: dist/*.whl
+        path: src/dist/*.whl
+        if-no-files-found: error
 
 
