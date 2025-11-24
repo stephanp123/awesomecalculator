@@ -28,7 +28,7 @@ jobs:
       - name: Download wheel artifact
         uses: actions/download-artifact@v4
         with:
-          name: awesome-calculator-wheel
+          name: awesome-calculator
           path: src/dist
 
       - name: List downloaded files (debug)
